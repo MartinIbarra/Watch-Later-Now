@@ -20,7 +20,7 @@
 		"default_popup": "index.html"
 	},
 	"oauth2": {
-		"client_id": "AIzaSyDMDWzNfJygm7Q9PPIHy2AqJ5vV8_WdlxA.apps.googleusercontent.com",
+		"client_id": "YOUR_CLIENT_ID.apps.googleusercontent.com",
 		"scopes": ["https://www.googleapis.com/auth/youtube.readonly"]
 	}
 }
