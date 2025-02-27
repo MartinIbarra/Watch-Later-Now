@@ -1,0 +1,26 @@
+{
+	"name": "Watch Later",
+	"version": "1.0",
+	"author": "Martin Ibarra",
+	"description": "Watch Later",
+	"manifest_version": 3,
+	"host_permissions": ["https://www.youtube.com/*"],
+	"background": {
+		"service_worker": "background.js"
+	},
+	"permissions": ["tabs", "activeTab", "scripting", "identity", "https://www.googleapis.com/auth/youtube.readonly"],
+	"content_scripts": [
+		{
+			"matches": ["https://www.youtube.com/*"],
+			"css": ["index.css"],
+			"js": ["index.js"]
+		}
+	],
+	"action": {
+		"default_popup": "index.html"
+	},
+	"oauth2": {
+		"client_id": "AIzaSyDMDWzNfJygm7Q9PPIHy2AqJ5vV8_WdlxA.apps.googleusercontent.com",
+		"scopes": ["https://www.googleapis.com/auth/youtube.readonly"]
+	}
+}
